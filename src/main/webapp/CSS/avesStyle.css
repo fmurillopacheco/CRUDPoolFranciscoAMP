@@ -1,0 +1,93 @@
+/* 
+    Created on : 16-may-2020, 20:40:01
+    Author     : Francisco_Antonio
+*/
+
+*{
+        list-style:none;
+}
+
+
+
+html{
+    /*background: darkgrey;*/
+    background: #FAFFFA;
+    font: 150% 'McLaren', cursive;
+}
+
+body{
+    text-align: center;
+    width: 80%;
+    /*height: 400px;*/
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    background: #577F59;
+    color:chartreuse;
+/*    color: #FAFFFA;*/
+    padding: 5%;
+    border-radius: 150px 5px 150px 5px;
+}
+
+#opcionesIniciales{
+    float: left;
+}
+
+#opcionesIniciales a, ul{
+    color:chartreuse;
+    text-decoration: none;
+    font-size: 40px;
+    transition: 0.3s;
+}
+#opcionesIniciales a:hover{
+    color: #FAFFFA;
+    text-decoration: none;
+    font-size: 50px;
+}
+
+#pajarosIndex{
+    width: 70%;
+    height: auto;
+    float: right;
+    margin-right: -10%;
+    margin-top: -8%;
+}
+
+button{    
+    font-family:'McLaren', cursive;
+    background: none;
+    border: 0;
+    color:chartreuse;
+    font-size: 40px;
+    transition: 0.3s;
+}
+button:hover{
+    color: #FAFFFA;
+    text-decoration: none;
+    font-size: 50px;
+}
+
+/*boton insertar, eliminar, actualizar*/
+#insertar, #eliminar, #actualizar{
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+table {
+   width: 100%;
+   border-collapse: separate;
+   border-spacing: 5px;
+   background: #ADFFB2;
+   color: #fff;
+}
+td{
+   color: black;
+   background: white;
+}
+
+#listadoActualizar, #listadoEliminar{
+    font-size: 30px;
+    margin-left: 2%;
+}
