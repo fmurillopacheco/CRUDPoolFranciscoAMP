@@ -39,21 +39,45 @@
 
             <table>
                 <h3>Introduce los nuevos datos: </h3>
+                    <% 
+        boolean hayErrores = false;
+        String anillaRepetida = "";
+        String valueEspecie = "";
+        String valueLugar = "";
+        String valueFecha = "";
+        String placeholder = "";
+        
+            if(request.getAttribute("anillaRepetida") != null){
+                hayErrores = true;
+                anillaRepetida = (String) request.getAttribute("anillaRepetida");
+                placeholder = "Error en la anilla";
+                if(request.getParameter("especie") != null){
+                    valueEspecie = request.getParameter("especie");
+                    }
+                if(request.getParameter("lugar") != null){
+                    valueLugar = request.getParameter("lugar");
+                    }
+                if(request.getParameter("fecha") != null){
+                    valueFecha = request.getParameter("fecha");
+                    }
+                }
+               
+        %>
                 <tr>
                     <td><label>Anilla: </label></td>
                     <td><input type="text" value="<%=ave.getAnilla()%>" name="anilla" readonly/></td>
                 </tr>
                 <tr>
                     <td><label>Introduce la especie: </label></td>
-                    <td><input type="text" value="" name="especie" maxlength="20"/></td>
+                    <td><input type="text" value="<%=valueEspecie%>" name="especie" maxlength="20"/></td>
                 </tr>
                 <tr>
                     <td><label>Introduce el lugar: </label></td>
-                    <td><input type="text" value="" name="lugar" maxlength="50"/></td>
+                    <td><input type="text" value="<%=valueLugar%>" name="lugar" maxlength="50"/></td>
                 </tr>
                 <tr>
                     <td><label>Introduce la fecha: </label></td>
-                    <td><input type="text" value="" name="fecha" placeholder="19/08/1989" maxlength="10"/></td>
+                    <td><input type="date" value="<%=valueFecha%>" name="fecha"/></td>
                 </tr>
             </table>
             <%

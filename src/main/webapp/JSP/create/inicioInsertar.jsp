@@ -10,7 +10,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <%@include file="/INC/metas.inc"%>
-        <link rel="stylesheet" type="text/css" href="/CSS/avesStyle.css">
+        <link rel="stylesheet" type="text/css" href="CSS/avesStyle.css">
         <title>Inserta Ave.</title>
     </head>
     <% 
@@ -56,7 +56,7 @@
             <table>
                 <tr>
                     <td><label>Introduce anilla: </label></td>
-                    <td><input type="text" value="" name="anilla" maxlength="3" placeholder="<%=placeholder%>"/></td>
+                    <td><input type="text" value="" name="anilla" maxlength="6" placeholder="<%=placeholder%>"/></td>
                 </tr>
                 <tr>
                     <td><label>Introduce la especie: </label></td>
@@ -64,11 +64,11 @@
                 </tr>
                 <tr>
                     <td><label>Introduce el lugar: </label></td>
-                    <td><input type="text" value="<%=valueLugar%>" name="lugar" maxlength="50"/></td>
+                    <td><input type="text" value="<%=valueLugar%>" name="lugar" maxlength="30"/></td>
                 </tr>
                 <tr>
                     <td><label>Introduce la fecha: </label></td>
-                    <td><input type="text" value="<%=valueFecha%>" name="fecha" placeholder="19/08/1989" maxlength="10"/></td>
+                    <td><input type="date" value="<%=valueFecha%>" name="fecha"/></td>
                 </tr>
             </table>
             <button type="submit" value="cancelar" name="operacion">Cancelar</button>
