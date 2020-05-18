@@ -10,14 +10,20 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <%@include file="/INC/metas.inc"%>
-        <link rel="stylesheet" href="../../CSS/error500.css">
-        <title>Error 500</title>
+        <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/CSS/error500.css" />
+        <title>Error interno del servidor.</title>
+        <!--ERROR 500-->
     </head>
     <body>
+        
+
         <div class=container>
-            <h2><span>500</span>Error interno del servidor</h2>
-            <p>¡Vaya! Algo salió mal.<br /><br />Trata de volver a cargar esta página o no dudes en contactar con nosotros si el problema persiste.</p>
-            <p>En caso de continuar es que no he sabido como solcionarlo. :( </p>
+            <div class="error">
+                <h2>Lo sentimos, algo salió mal.</h2>
+            </div>
+                <div class="error1">
+                    <h3>Vuelve a intentarlo, si persiste ponte en contacto con el Administrador.<a href="<%=request.getContextPath()%>">Gracias</a> Gracias.</h3>
+                </div>                
         </div>
     </body>
 </html>
