@@ -40,8 +40,13 @@
                             Ave ave = it.next();
             %>
         <form action="ControladorFinal" method="post">
-            <table border = 1>
-
+            <table>
+                    <tr>
+                        <th>Anilla</th>
+                        <th>Especie</th>
+                        <th>Lugar</th>
+                        <th>Fecha</th>
+                    </tr>
                 <tr id="leerTabla">
                     <td><%=ave.getAnilla()%></td>
                     <td><%=ave.getEspecie()%></td>

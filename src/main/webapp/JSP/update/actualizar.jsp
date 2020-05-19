@@ -25,19 +25,24 @@
                 for (Ave ave : arrayAves) {
             %>
             
-            <table border = 1>
-
                 <h3>El ave seleccionada es: </h3>
-                <tr id="leerTabla">
-                    <td><%=ave.getAnilla()%></td>
-                    <td><%=ave.getEspecie()%></td>
-                    <td><%=ave.getLugar()%></td>
-                    <td><%=ave.getFecha()%></td>
-                </tr>
+                <table>
+                    <tr>
+                        <th>Anilla</th>
+                        <th>Especie</th>
+                        <th>Lugar</th>
+                        <th>Fecha</th>
+                    </tr>
+                    <tr>
+                        <td><%=ave.getAnilla()%></td>
+                        <td><%=ave.getEspecie()%></td>
+                        <td><%=ave.getLugar()%></td>
+                        <td><%=ave.getFecha()%></td>
+                    </tr>
+                </table>
                 <br>
-            </table>
 
-            <table>
+
                 <h3>Introduce los nuevos datos: </h3>
                     <% 
         boolean hayErrores = false;
@@ -63,23 +68,17 @@
                 }
                
         %>
-                <tr>
-                    <td><label>Anilla: </label></td>
-                    <td><input type="text" value="<%=ave.getAnilla()%>" name="anilla" readonly/></td>
-                </tr>
-                <tr>
-                    <td><label>Introduce la especie: </label></td>
-                    <td><input type="text" value="<%=valueEspecie%>" name="especie" maxlength="20"/></td>
-                </tr>
-                <tr>
-                    <td><label>Introduce el lugar: </label></td>
-                    <td><input type="text" value="<%=valueLugar%>" name="lugar" maxlength="50"/></td>
-                </tr>
-                <tr>
-                    <td><label>Introduce la fecha: </label></td>
-                    <td><input type="date" value="<%=valueFecha%>" name="fecha"/></td>
-                </tr>
-            </table>
+                
+                    <label>Anilla: </label>
+                    <input type="text" value="<%=ave.getAnilla()%>" name="anilla" readonly/><br><br>
+                    <label>Introduce la especie: </label>
+                    <input type="text" value="<%=valueEspecie%>" name="especie" maxlength="20"/><br><br>
+                    <label>Introduce el lugar: </label>
+                    <input type="text" value="<%=valueLugar%>" name="lugar" maxlength="50"/><br><br>
+                    <label>Introduce la fecha: </label>
+                    <input type="date" value="<%=valueFecha%>" name="fecha"/><br><br>
+                
+
             <%
                 }
             %>

@@ -35,14 +35,14 @@ public class Concluir extends HttpServlet {
                 case "Actualizar":
 
                     actualizar(request, response);
-                    if (request.getParameter("operacion").equals("cancelar")) {
+                    if (request.getParameter("operacion").equals("actualizar")) {
                         request.getRequestDispatcher("ControladorFinal").forward(request, response);
                     }
                     break;
                 case "Eliminar":
 
                     eliminar(request, response);
-                    if (request.getParameter("operacion").equals("cancelar")) {
+                    if (request.getParameter("operacion").equals("eliminar")) {
                         request.getRequestDispatcher("ControladorFinal").forward(request, response);
                     }
                     break;

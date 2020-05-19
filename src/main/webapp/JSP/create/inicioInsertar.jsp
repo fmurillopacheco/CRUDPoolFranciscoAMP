@@ -51,28 +51,18 @@
             }
 
         %>
-        
-                <form action="<%=request.getContextPath()%>/Realizar" method="post">
-            <table>
-                <tr>
-                    <td><label>Introduce anilla: </label></td>
-                    <td><input type="text" value="" name="anilla" maxlength="6" placeholder="<%=placeholder%>"/></td>
-                </tr>
-                <tr>
-                    <td><label>Introduce la especie: </label></td>
-                    <td><input type="text" value="<%=valueEspecie%>" name="especie" maxlength="20"/></td>
-                </tr>
-                <tr>
-                    <td><label>Introduce el lugar: </label></td>
-                    <td><input type="text" value="<%=valueLugar%>" name="lugar" maxlength="30"/></td>
-                </tr>
-                <tr>
-                    <td><label>Introduce la fecha: </label></td>
-                    <td><input type="date" value="<%=valueFecha%>" name="fecha"/></td>
-                </tr>
-            </table>
+        <form action="<%=request.getContextPath()%>/Realizar" method="post">
+            <label>Introduce anilla: </label>
+            <input  type="text" value="" name="anilla" maxlength="6" placeholder="<%=placeholder%>"/><br><br>
+            <label>Introduce la especie: </label>
+                <input  type="text" value="<%=valueEspecie%>" name="especie" maxlength="20"/><br><br>
+            <label>Introduce el lugar: </label>
+                <input type="text" value="<%=valueLugar%>" name="lugar" maxlength="30"/><br><br>
+            <label>Introduce la fecha: </label>
+                <input  type="date" value="<%=valueFecha%>" name="fecha"/><br><br>
             <button type="submit" value="cancelar" name="operacion">Cancelar</button>
             <button id="insertar" type="submit" value="crearAve" name="operacion">Crear</button>
         </form>
+        </div>
     </body>
 </html>

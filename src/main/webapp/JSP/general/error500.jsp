@@ -10,20 +10,21 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <%@include file="/INC/metas.inc"%>
-        <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/CSS/error500.css" />
+        <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/CSS/error404.css" />
         <title>Error interno del servidor.</title>
         <!--ERROR 500-->
     </head>
     <body>
-        
+        <div class="error">
+            <a href="<%=request.getContextPath()%>"><img src="<%=request.getContextPath()%>/IMG/error500Coyote.png"/></a>
+            <h2>¡Vaya!Lo sentimos, algo salió mal</h2>
+            <h2>Error interno del servidor.</h2>
+            <h3>Pulsa en la imagen para volver al Men&uacute;.</h3>
+            
+        </div>
 
         <div class=container>
-            <div class="error">
-                <h2>Lo sentimos, algo salió mal.</h2>
-            </div>
-                <div class="error1">
-                    <h3>Vuelve a intentarlo, si persiste ponte en contacto con el Administrador. Gracias. <br> <a href="<%=request.getContextPath()%>"> Volver </a></h3>
-                </div>                
+              
         </div>
     </body>
 </html>

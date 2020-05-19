@@ -37,7 +37,7 @@ public class Realizar extends HttpServlet {
 
                     actualizarAve(request, response);
 
-                    if (request.getParameter("operacion").equals("cancelar")) {
+                    if (request.getParameter("operacion").equals("actualizarAve")) {
                         request.getRequestDispatcher("ControladorFinal").forward(request, response);
                     } else {
                         request.getRequestDispatcher("JSP/update/actualizar.jsp").forward(request, response);
@@ -47,7 +47,7 @@ public class Realizar extends HttpServlet {
 
                     eliminarAve(request, response);
 
-                    if (request.getParameter("operacion").equals("cancelar")) {
+                    if (request.getParameter("operacion").equals("eliminarAve")) {
                         request.getRequestDispatcher("ControladorFinal").forward(request, response);
                     } else {
                         request.getRequestDispatcher("JSP/delete/eliminar.jsp").forward(request, response);

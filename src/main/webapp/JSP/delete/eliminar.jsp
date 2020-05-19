@@ -35,7 +35,7 @@
                 while (it.hasNext()) {
                     Ave ave = it.next();
             %>
-            <table border = 1>
+            <table>
 
                 
                 <tr id="leerTabla">
