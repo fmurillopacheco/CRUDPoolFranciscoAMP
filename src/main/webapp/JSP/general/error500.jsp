@@ -22,7 +22,7 @@
                 <h2>Lo sentimos, algo salió mal.</h2>
             </div>
                 <div class="error1">
-                    <h3>Vuelve a intentarlo, si persiste ponte en contacto con el Administrador.<a href="<%=request.getContextPath()%>">Gracias</a> Gracias.</h3>
+                    <h3>Vuelve a intentarlo, si persiste ponte en contacto con el Administrador. Gracias. <br> <a href="<%=request.getContextPath()%>"> Volver </a></h3>
                 </div>                
         </div>
     </body>
