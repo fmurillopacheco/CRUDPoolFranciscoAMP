@@ -41,12 +41,6 @@
             %>
         <form action="ControladorFinal" method="post">
             <table>
-                    <tr>
-                        <th>Anilla</th>
-                        <th>Especie</th>
-                        <th>Lugar</th>
-                        <th>Fecha</th>
-                    </tr>
                 <tr id="leerTabla">
                     <td><%=ave.getAnilla()%></td>
                     <td><%=ave.getEspecie()%></td>
@@ -55,7 +49,6 @@
                 </tr>
 
             </table>
-            <br />
             <%
                     }
                 }

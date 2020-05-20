@@ -166,13 +166,13 @@ public class Realizar extends HttpServlet {
             
             //SQL completa****
             sql = "delete from aves where ";
-            for (int i = 0; i < request.getParameterValues("avesEliminar").length; i++) {
+           for (int i = 0; i < request.getParameterValues("avesEliminar").length; i++) {
                 sql += " anilla = ? or"; 
             }
             sql = sql.substring(0, sql.length() - 3);
             sql += ";";//cerrar sentencia
             //SQL completa****
-            
+           
             preparedStatement = conexion.prepareStatement(sql);
             for (int i = 0; i < request.getParameterValues("avesEliminar").length; i++) {
                

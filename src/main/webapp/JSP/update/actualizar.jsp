@@ -28,12 +28,6 @@
                 <h3>El ave seleccionada es: </h3>
                 <table>
                     <tr>
-                        <th>Anilla</th>
-                        <th>Especie</th>
-                        <th>Lugar</th>
-                        <th>Fecha</th>
-                    </tr>
-                    <tr>
                         <td><%=ave.getAnilla()%></td>
                         <td><%=ave.getEspecie()%></td>
                         <td><%=ave.getLugar()%></td>

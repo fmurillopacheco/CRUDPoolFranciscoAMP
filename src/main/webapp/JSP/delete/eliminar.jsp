@@ -28,7 +28,7 @@
     <body>
         <h1>¿Estás seguro que deseas ELIMINAR estas aves?</h1>
         
-                <form action="<%=request.getContextPath()%>/Concluir" method="post">
+        <form action="<%=request.getContextPath()%>/Concluir" method="post">
         <h3>Las aves seleccionadas son: </h3>
 
             <%
@@ -36,9 +36,7 @@
                     Ave ave = it.next();
             %>
             <table>
-
-                
-                <tr id="leerTabla">
+                <tr>
                     <td><%=ave.getAnilla()%></td>
                     <td><%=ave.getEspecie()%></td>
                     <td><%=ave.getLugar()%></td>

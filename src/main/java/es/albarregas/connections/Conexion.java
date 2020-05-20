@@ -13,8 +13,7 @@ import javax.sql.DataSource;
  */
 public class Conexion {
     //crear conexion con la base de datos
-    public static DataSource crearConexion() throws SQLException{
-    //public static Connection crearConexion() throws SQLException{
+    public static DataSource crearConexion(){
     DataSource datasource = null;
         try {
             Context contextoInicial = new InitialContext();
